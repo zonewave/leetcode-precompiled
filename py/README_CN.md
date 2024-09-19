@@ -1,10 +1,24 @@
 # LeetCode Python 预编译库  
   
-欢迎使用 LeetCode Python 预编译库！  
+欢迎使用 LeetCode Python 库！  
+
+## 本地调试步骤
+### 安装[leetcode-editor](https://github.com/shuzijun/leetcode-editor)
+
+### 配置模板
+![settingimag](./img/templatesetting.jpg)
+
+[template content](./jetbrain_editor_template.md)
+
+### 点击题目
+![init](./img/init.jpg)
+
+### 配置参数和用例，并进行调试
+![debug](./img/debug.jpg)
+
+## 安装工具库 
   
-## 安装  
-  
-您可以通过以下命令安装该库：  
+可以通过以下命令安装该库：  
 ### bash  
 ``` sh
 pip install precompiled  
@@ -26,7 +40,8 @@ python
   
 ```python  
 from precompiled.listnode import ListNode  
-from precompiled.nestedinteger import NestedInteger from precompiled.treenode import TreeNode`  
+from precompiled.nestedinteger import NestedInteger
+from precompiled.treenode import TreeNode`  
 ```  
 ### 常用数据结构和方法 
   
@@ -36,16 +51,3 @@ from precompiled.nestedinteger import NestedInteger from precompiled.treenode im
 	- arrays_to_list_node 将多个数组转成多个链表，返回以链表为元素的元组
 - **NestedInteger**：嵌套整数  
 - **TreeNode**：树节点  
-  
-  
-## 贡献  
-  
-欢迎任何形式的贡献！如果您有新的数据结构或改进建议，请提交拉取请求或提出问题。  
-  
-## 许可证  
-  
-本项目采用 MIT 许可证，详细信息请查看 [LICENSE](https://github.com/zonewave/leetcode-precomiled/blob/master/LICENSE) 文件。  
-  
-## 联系信息  
-  
-如有疑问，请联系项目维护者。
