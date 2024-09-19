@@ -1,14 +1,36 @@
 # LeetCode Precompiled Packages
 
-## 简介
-本项目提供各种编程语言的 LeetCode 预编译包，旨在帮助开发者快速解决算法问题。项目中包含官方声明的所有数据结构的定义和常用工具函数。
+[中文文档](https://github.com/zonewave/leetcode-precomiled/blob/master/README_CN.md)
+## Introduction
 
-## 特性
-- 支持多种编程语言的预编译包
-- 包含常用数据结构，如 `ListNode`、`NestedInteger`、`TreeNode` 等
-- 易于使用，适合快速上手
+This project provides LeetCode development packages for various programming languages, helping those who solve LeetCode problems in local environments to better debug test cases.
 
-## 支持的编程语言
-- [Python](https://github.com/zonewave/leetcode-precomiled/tree/master/py#readme)
+## Features
 
+- Provides debugging templates for various programming languages corresponding to the[leetcode-editor](https://github.com/shuzijun/leetcode-editor) plugin.
+- Supports precompiled packages for multiple programming languages.
+- Includes commonly used data structures such as`ListNode`,`NestedInteger`,`TreeNode`, etc.
+- Contains some utility functions.
+- Easy to use and suitable for quick onboarding.
 
+## Supported Programming Languages
+
+- [x] [Python](https://github.com/zonewave/leetcode-precomiled/tree/master/py#readme)
+- [ ] Go
+- [ ] Java
+- [ ] CSharp
+- [ ] C++
+- [ ] C
+- [ ] Rust
+
+## Contributions
+
+Contributions of any kind are welcome! If you have new data structures or suggestions for improvements, please submit a pull request or raise an issue.
+
+## License
+
+This project is licensed under the MIT License. For more details, please see the [LICENSE](https://github.com/zonewave/leetcode-precomiled/blob/master/LICENSE) file.
+
+## Contact Information
+
+If you have any questions, please contact the project maintainer.

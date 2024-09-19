@@ -10,6 +10,10 @@ requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
 
+[project.urls]
+Homepage = "https://github.com/zonewave/leetcode-precomiled/tree/master/py"
+Issues = "https://github.com/zonewave/leetcode-precomiled/issues"
+
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
