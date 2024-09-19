@@ -21,7 +21,7 @@ class TestListNode(TestCase):
 
     def test_array_to_list_node(self):
        arr = [1, 2, 3]
-       head = ListNode._array_to_list_node(arr)
+       head = ListNode.array_to_list_node(arr)
        self.assertEqual(head.val, 1)
        self.assertEqual(head.next.val, 2)
        self.assertEqual(head.next.next.val, 3)
