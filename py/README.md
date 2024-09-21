@@ -1,13 +1,13 @@
 # LeetCode Python  Debug  in pycharm
 
 [github](https://github.com/zonewave/leetcode-precomiled)
-[中文文档](https://github.com/zonewave/leetcode-precomiled/blob/master/README_CN.md)
+[中文文档](https://github.com/zonewave/leetcode-precomiled/blob/master/py/README_CN.md)
 
 ## How to debug leetcode problem
 
 ### install [leetcode-editor](https://github.com/shuzijun/leetcode-editor)
 
-###     
+###      
 
 ![settingimag](https://github.com/zonewave/leetcode-precomiled/blob/master/py/img/templatesetting.jpg)
 
