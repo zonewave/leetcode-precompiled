@@ -49,5 +49,6 @@ from precompiled.treenode import TreeNode`
 	- 默认实现eq方法
 	- array_to_list_node 将数组转换成链表，返回头结点
 	- arrays_to_list_node 将多个数组转成多个链表，返回以链表为元素的元组
+    - index: 返回链表第 idx 个节点， 下标从 0 开始。
 - **NestedInteger**：嵌套整数  
 - **TreeNode**：树节点  

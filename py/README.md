@@ -47,6 +47,7 @@ from precompiled.treenode import TreeNode`
     - Default implementation of the`eq`method
     - `array_to_list_node`: Converts an array into a linked list, returning the head node
     - `arrays_to_list_node`: Converts multiple arrays into multiple linked lists, returning a tuple of linked lists
+    - `index`: get Returns the idx node of the linked list,
 - **NestedInteger**: Nested integer
 - **TreeNode**: Tree node
 
