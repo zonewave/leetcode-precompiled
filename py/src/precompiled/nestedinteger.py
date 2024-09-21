@@ -1,9 +1,10 @@
 from dataclasses import dataclass
+from typing import List, Union
 
 
 @dataclass
 class NestedInteger:
-    val:int | list['NestedInteger']
+    val:Union[int, List['NestedInteger']]
 
     def isInteger(self) -> bool:
         """
