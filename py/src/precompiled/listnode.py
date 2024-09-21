@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from functools import reduce
-from typing import Optional, Tuple,Union
+from typing import Optional, Tuple,Union,List
 
 
 @dataclass
@@ -28,7 +28,7 @@ class ListNode(object):
         return n
 
     @staticmethod
-    def array_to_list_node(arr: list[int]) -> Optional['ListNode']:
+    def array_to_list_node(arr: List[int]) -> Optional['ListNode']:
         """
         将数组转换为链表节点。
         Converts an array to a linked list node.
@@ -36,7 +36,7 @@ class ListNode(object):
         return reduce(lambda acc, val: ListNode(val, acc), reversed(arr), None)
 
     @staticmethod
-    def arrays_to_linked_list(*arr_list: list[int]) -> Tuple[Union['ListNode', None], ...]:
+    def arrays_to_linked_list(*arr_list: List[int]) -> Tuple[Optional['ListNode'], ...]:
         """
         将多个数组转换为链表节点元组。
         Converts multiple arrays to a tuple of linked list nodes.

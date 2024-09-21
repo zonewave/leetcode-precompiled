@@ -44,12 +44,12 @@ import io
 import sys
 import json
 
-from unittest import TestCase
-from dataclasses import dataclass
 from precompiled.listnode import ListNode
 from precompiled.nestedinteger import NestedInteger
 from precompiled.treenode import TreeNode
 
+
+from typing import Optional, Tuple,Union,List
 from unittest import TestCase
 from dataclasses import dataclass
 
