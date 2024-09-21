@@ -3,12 +3,14 @@ name = "precompiled"
 version = "0.1.3"
 description = "leetcode precompiled package"
 authors = [
-    {name = "zonewave", email = "ybzhang17@163.com"},
+    { name = "zonewave", email = "ybzhang17@163.com" },
 ]
-dependencies = []
+dependencies = [
+    "flake8>=5.0.4",
+]
 requires-python = ">=3.7"
 readme = "README.md"
-license = {text = "MIT"}
+license = { text = "MIT" }
 
 [project.urls]
 Homepage = "https://github.com/zonewave/leetcode-precomiled/tree/master/py"
