@@ -7,4 +7,3 @@ class TreeNode:
     val: int
     left: Optional['TreeNode']
     right: Optional['TreeNode']
-
