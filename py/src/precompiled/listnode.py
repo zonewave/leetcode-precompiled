@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from functools import reduce
-from typing import Optional, Tuple,Union,List
+from typing import Optional, Tuple, List
 
 
 @dataclass
@@ -13,18 +13,18 @@ class ListNode(object):
             return False
         return self.val == other.val and (self.next == other.next)
 
-    def index(self, idx: int)->Optional['ListNode']:
+    def index(self, idx: int) -> Optional['ListNode']:
         """
         返回链表第 idx 个节点， 下标从 0 开始。
         Returns the idx node of the linked list, starts at 0.
         """
-        if idx <0:
+        if idx < 0:
             return None
-        n=self
-        for _ in range(1,idx+1):
+        n = self
+        for _ in range(1, idx + 1):
             if n is None:
                 return None
-            n =n.next
+            n = n.next
         return n
 
     @staticmethod

@@ -1,0 +1,15 @@
+[flake8]
+ignore = D203
+exclude =
+  .git,
+  __pycache__,
+  build,
+  dist,
+  .venv
+  .pdm-build
+
+count = True
+show-source = True
+max-complexity = 10
+max-line-length = 127
+statistics = True

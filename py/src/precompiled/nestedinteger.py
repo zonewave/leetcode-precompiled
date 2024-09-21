@@ -4,7 +4,7 @@ from typing import List, Union
 
 @dataclass
 class NestedInteger:
-    val:Union[int, List['NestedInteger']]
+    val: Union[int, List['NestedInteger']]
 
     def isInteger(self) -> bool:
         """
