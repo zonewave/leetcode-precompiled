@@ -2,7 +2,7 @@
 
 欢迎使用 LeetCode Python 库！
 
-[github](https://github.com/zonewave/leetcode-precomiled)
+[github](https://github.com/zonewave/leetcode-precompiled)
 
 ## 本地调试步骤
 
@@ -10,17 +10,17 @@
 
 ### 配置模板
 
-![settingimag](https://github.com/zonewave/leetcode-precomiled/blob/master/py/img/templatesetting.jpg)
+![settingimag](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/templatesetting.jpg)
 
-[template content](https://github.com/zonewave/leetcode-precomiled/blob/master/py/jetbrain_editor_template.md)
+[template content](https://github.com/zonewave/leetcode-precompiled/blob/master/py/jetbrain_editor_template.md)
 
 ### 点击题目
 
-![init](https://github.com/zonewave/leetcode-precomiled/blob/master/py/img/init.jpg)
+![init](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/init.jpg)
 
 ### 配置参数和用例，并进行调试
 
-![debug](https://github.com/zonewave/leetcode-precomiled/blob/master/py/img/debug.jpg)
+![debug](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/debug.jpg)
 
 ## 安装工具库
 

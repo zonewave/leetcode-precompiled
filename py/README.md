@@ -1,7 +1,7 @@
 # LeetCode Python  Debug  in pycharm
 
-[github](https://github.com/zonewave/leetcode-precomiled)
-[中文文档](https://github.com/zonewave/leetcode-precomiled/blob/master/py/README_CN.md)
+[github](https://github.com/zonewave/leetcode-precompiled)
+[中文文档](https://github.com/zonewave/leetcode-precompiled/blob/master/py/README_CN.md)
 
 ## How to debug leetcode problem
 
@@ -9,17 +9,17 @@
 
 ###      
 
-![settingimag](https://github.com/zonewave/leetcode-precomiled/blob/master/py/img/templatesetting.jpg)
+![settingimag](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/templatesetting.jpg)
 
-[template content](https://github.com/zonewave/leetcode-precomiled/blob/master/py/jetbrain_editor_template.md)
+[template content](https://github.com/zonewave/leetcode-precompiled/blob/master/py/jetbrain_editor_template.md)
 
 ### click problem and init python file
 
-![init](https://github.com/zonewave/leetcode-precomiled/blob/master/py/img/init.jpg)
+![init](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/init.jpg)
 
 ### replace arg and add test case
 
-![debug](https://github.com/zonewave/leetcode-precomiled/blob/master/py/img/debug.jpg)
+![debug](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/debug.jpg)
 
 ## Install tool package
 
