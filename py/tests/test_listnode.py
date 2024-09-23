@@ -47,3 +47,28 @@ class TestListNode(TestCase):
         self.assertIsNone(head.index(10))
 
         self.assertIsNone(head.index(-1))
+
+    def test_iter_list(self):
+        values = [node.val for node in
+                  ListNode.iter_list(ListNode.array_to_list_node([1, 2, 3]))]
+        self.assertEqual(values, [1, 2, 3])
+
+    def test_iter_list_with_cnt(self):
+        values = [(i, node.val) for i, node in
+                  ListNode.iter_list_with_cnt(ListNode.array_to_list_node([1, 2, 3]))]
+        self.assertEqual(values, [(0, 1), (1, 2), (2, 3)])
+
+    def test_apply(self):
+        result = []
+        n = ListNode.array_to_list_node([5, 9])
+
+        def collect_values(node):
+            result.append(node.val)
+
+        n.apply(collect_values)
+        self.assertEqual(result, [5])
+
+    def test_list_node_to_array(self):
+        values = ListNode.list_node_to_array(
+            ListNode.array_to_list_node([1, 2, 3]))
+        self.assertEqual(values, [1, 2, 3])

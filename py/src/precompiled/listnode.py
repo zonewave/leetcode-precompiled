@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from functools import reduce
-from typing import Optional, Tuple, List
+from typing import Optional, Tuple, List, Generator, Callable
 
 
 @dataclass
@@ -13,6 +13,28 @@ class ListNode(object):
             return False
         return self.val == other.val and (self.next == other.next)
 
+    @staticmethod
+    def iter_list(node: 'ListNode') -> Generator['ListNode', None, None]:
+        """
+        返回迭代链表的生成器
+        return generator of linked list
+        """
+        while node:
+            yield node
+            node = node.next
+
+    @staticmethod
+    def iter_list_with_cnt(node: 'ListNode') -> Generator[Tuple[int, 'ListNode'], None, None]:
+        """
+        返回带计数的迭代链表的生成器
+        return generator of linked list with count
+        """
+        cnt = 0
+        while node:
+            yield cnt, node
+            node = node.next
+            cnt += 1
+
     def index(self, idx: int) -> Optional['ListNode']:
         """
         返回链表第 idx 个节点， 下标从 0 开始。
@@ -20,12 +42,14 @@ class ListNode(object):
         """
         if idx < 0:
             return None
-        n = self
-        for _ in range(1, idx + 1):
-            if n is None:
-                return None
-            n = n.next
-        return n
+        for i, n in ListNode.iter_list_with_cnt(self):
+            if i == idx:
+                return n
+        return None
+
+    def apply(self, func: Callable[['ListNode'], None]) -> Optional['ListNode']:
+        func(self)
+        return self
 
     @staticmethod
     def array_to_list_node(arr: List[int]) -> Optional['ListNode']:
@@ -49,3 +73,11 @@ class ListNode(object):
         A tuple of head nodes of the linked lists, with each array corresponding to a linked list head node.
         """
         return tuple(ListNode.array_to_list_node(arr) for arr in arr_list)
+
+    @staticmethod
+    def list_node_to_array(node: 'ListNode') -> List[int]:
+        """
+        将数组转换为链表节点。
+        Converts an array to a linked list node.
+        """
+        return [cur.val for cur in ListNode.iter_list(node)]
