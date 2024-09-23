@@ -19,7 +19,7 @@ class Node(TreeNode, ListNode):
         return ListNode.array_to_list_node(arr)
 
     @staticmethod
-    def arr_to_tree(vals: List[int]) -> Optional['Node']:
+    def array_to_tree(vals: List[int]) -> Optional['Node']:
         return TreeNode.array_to_tree(vals)
 
     @staticmethod

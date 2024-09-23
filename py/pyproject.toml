@@ -1,12 +1,13 @@
 [project]
 name = "precompiled"
-version = "0.1.4"
+version = "0.1.5"
 description = "leetcode precompiled package"
 authors = [
     { name = "zonewave", email = "ybzhang17@163.com" },
 ]
 dependencies = [
     "flake8>=5.0.4",
+    "coverage>=7.2.7",
 ]
 requires-python = ">=3.7"
 readme = "README.md"

@@ -19,6 +19,8 @@ class TestListNode(TestCase):
         node2 = ListNode.array_to_list_node([1, 3])
         self.assertNotEqual(node1, node2)
 
+        self.assertNotEqual(node1, None)
+
     def test_array_to_list_node(self):
         arr = [1, 2, 3]
         head = ListNode.array_to_list_node(arr)

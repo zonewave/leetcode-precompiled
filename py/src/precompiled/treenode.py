@@ -18,10 +18,6 @@ class TreeNode(object):
     def set_right(self, n: 'TreeNode'):
         self.right = n
 
-    # @staticmethod
-    # def arr_to_tree(vals: List[int]) -> Optional['TreeNode']:
-    #     return new_tree(lambda x: TreeNode(x, None, None), vals)
-
     @staticmethod
     def array_to_tree(vals: List[Optional[int]]) -> Optional['TreeNode']:
         if not vals:

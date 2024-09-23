@@ -9,3 +9,5 @@ class TestTreeNode(TestCase):
         self.assertEqual(root.left.val, 3)
         self.assertEqual(root.right.val, 4)
         self.assertEqual(root.val, 2)
+
+        self.assertIsNone(TreeNode.array_to_tree([]))
