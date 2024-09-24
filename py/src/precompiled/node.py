@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Optional, List, Dict
 
-from src.precompiled.listnode import ListNode
-from src.precompiled.treenode import TreeNode
+from .listnode import ListNode
+from .treenode import TreeNode
 
 
 @dataclass

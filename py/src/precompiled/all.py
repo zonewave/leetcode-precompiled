@@ -33,11 +33,10 @@ import io
 import sys
 import json
 
-
-from listnode import ListNode
-from nestedinteger import NestedInteger
-from treenode import TreeNode
-from node import Node
+from .listnode import ListNode
+from .nestedinteger import NestedInteger
+from .treenode import TreeNode
+from .node import Node
 
 from typing import *
 from unittest import TestCase
