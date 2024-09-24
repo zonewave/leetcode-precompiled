@@ -47,6 +47,7 @@ import json
 from precompiled.listnode import ListNode
 from precompiled.nestedinteger import NestedInteger
 from precompiled.treenode import TreeNode
+from precompiled.node import Node
 
 from typing import *
 from unittest import TestCase

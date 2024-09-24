@@ -8,11 +8,17 @@
 
 ### 安装[leetcode-editor](https://github.com/shuzijun/leetcode-editor)
 
+### [安装工具库](#安装工具库方式)
+
 ### 配置模板
 
 ![settingimag](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/templatesetting.jpg)
 
-[template content](https://github.com/zonewave/leetcode-precompiled/blob/master/py/jetbrain_editor_template.md)
+[模板一](https://github.com/zonewave/leetcode-precompiled/blob/master/py/jetbrain_editor_template.md)
+这里除了最后的几行以外， import部分 都是官方web实际运行导入的库
+
+[模板二，推荐](https://github.com/zonewave/leetcode-precompiled/blob/master/py/jetbrain_editor_template2.md)
+与模板一不同，这个主要简化了import，可以直接全量导入库，第一个是为了某些时候按需导入其他库，新手默认推荐这个。
 
 ### 点击题目
 
@@ -22,12 +28,12 @@
 
 ![debug](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/debug.jpg)
 
-## 安装工具库
+## 安装工具库方式
 
-本项目包含
+本库包含
 
 1. leetcode 官方声明的所有数据结构
-2. 本地测试所需的各种工具函数
+2. 本地测试所需的各种工具函数 [api](#常用数据结构和方法)
 可以通过以下命令安装该库：
 
 ### bash
@@ -54,8 +60,6 @@ python
 from precompiled.listnode import ListNode
 from precompiled.nestedinteger import NestedInteger
 from precompiled.treenode import TreeNode
-
-`  
 ```  
 
 ### 常用数据结构和方法

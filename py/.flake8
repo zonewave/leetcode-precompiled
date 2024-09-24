@@ -13,3 +13,6 @@ show-source = True
 max-complexity = 10
 max-line-length = 127
 statistics = True
+
+per-file-ignores =
+    ./src/precompiled/all.py:F401,F403
