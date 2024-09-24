@@ -1,6 +1,7 @@
 # LeetCode Python  Debug  in pycharm
 
 [github](https://github.com/zonewave/leetcode-precompiled)
+
 [中文文档](https://github.com/zonewave/leetcode-precompiled/blob/master/py/README_CN.md)
 
 ## How to debug leetcode problem

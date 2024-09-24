@@ -4,7 +4,7 @@
 
 [github](https://github.com/zonewave/leetcode-precompiled)
 
-## 本地调试步骤
+## pycharm 本地调试步骤
 
 ### 安装[leetcode-editor](https://github.com/shuzijun/leetcode-editor)
 
@@ -28,12 +28,51 @@
 
 ![debug](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/debug.jpg)
 
+## vscode 本地调试步骤
+
+### 安装官方扩展并配置 Leetcode
+
+参考官方的说明，配置好账号密码，这里就不说明
+
+### 代码路径的配置
+
+settings里搜索leetcode,打开setting.json,用下面的配置，添加或者替换Python3的文件路径声明
+
+```json
+{
+  "leetcode.filePath": {
+    "python3": {
+      "folder": ".",
+      "filename": "test_${id}_${kebab-case-name}.py"
+    }
+  }
+}
+```
+
+### [安装工具库](#安装工具库方式)
+
+### 配置用户代码片段 snippet
+
+在窗口左下角设置里 snippets，选择python， 生成代码片段文件。
+
+然后把[这里的](https://github.com/zonewave/leetcode-precompiled/blob/master/py/python-snippets.json) 内容，复制过去
+
+### 生成代码片段
+
+点击lc界面里任一题目生成文件后，在空白处，敲击lctest，然后使用tab自动补全，接着像pycharm 那样填参数即可
+
+### 配置unittest测试并断点调试
+
+本模板用的是uniittest框架。
+vscode的测试配置，参考微软的[文档](https://vscode.github.net.cn/docs/python/testing#_configure-tests)
+写好答案后，点击test界面，运行即可
+
 ## 安装工具库方式
 
 本库包含
 
 1. leetcode 官方声明的所有数据结构
-2. 本地测试所需的各种工具函数 [api](#常用数据结构和方法)
+2. 本地测试所需的各种工具函数 [api说明](#常用数据结构和方法)
 可以通过以下命令安装该库：
 
 ### bash

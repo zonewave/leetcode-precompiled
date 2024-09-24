@@ -1,11 +1,12 @@
-# LeetCode 配置本地调试环境（jetbrains系列）
+# LeetCode 配置本地调试环境（jetbrains系列和vscode）
 
 ## 简介
-本项目基于[leetcode-editor](https://github.com/shuzijun/leetcode-editor),提供做题模板,用最简单快速的方式去本地调试leetcode 环境
+本项目提供做题模板和测试工具函数,用最简单快速的方式去本地调试leetcode。
+支持jetbrains系列和vscode(通过代码片段)
 
 ## 动机
 在网页刷题太痛苦了，尤其是遇到复杂的测试用例无法通过时，定位问题往往花很长时间。
-因此我想用本地ide来单步调试leetcode，毕竟本地单步还是更方便，而且定位问题更快。后来我用pycharm 安了leetcode-editor，这块解决了很大的痛点。但问题是它的默认模板太简单，写测试用例还是太折腾，网上也找不到很好的模板。所以诞生了这个项目，我这个模板只要配置好参数类型，剩下的只要复制问题描述里的测试用例就可以跑起来了。
+因此我想用本地ide来单步调试leetcode，毕竟本地单步还是更方便，而且定位问题更快。后来我用pycharm 安了leetcode-editor，这块解决了很大的痛点。但问题是它的默认模板太简单，写测试用例还是太折腾，网上也找不到很好的模板。所以诞生了这个项目，本项目提供这个模板只要配置好参数类型，剩下的只要复制问题描述里的测试用例就可以跑起来了。
 目前只有python，后面还有其他语言支持的。
 ## 效果
 ### [Python](https://github.com/zonewave/leetcode-precompiled/blob/master/py/README_CN.md)
