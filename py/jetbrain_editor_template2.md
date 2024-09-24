@@ -26,19 +26,17 @@ class LTestCase:
 
 
 class TestSolution(TestCase):
-    def test_$
-
-        !velocityTool.snakeCaseName(${question.titleSlug})(self):
-    cases: list[LTestCase] = [
-        # add args
-        LTestCase("1", Args(), ),
-        # LTestCase("2", Args(), ),
-        # LTestCase("3", Args(), ),
-    ]
-    s = Solution()
-    for case in cases:
-        with self.subTest(case=case.name):
-            # may be replace func name
-            self.assertEqual(s.$!velocityTool.smallCamelCaseName(${question.titleSlug})(** case.args.__dict__), case.want)
+    def test_$!velocityTool.snakeCaseName(${question.titleSlug})(self):
+        cases: list[LTestCase] = [
+            # add args
+            LTestCase("1", Args(), ),
+            # LTestCase("2", Args(), ),
+            # LTestCase("3", Args(), ),
+        ]
+        s = Solution()
+        for case in cases:
+            with self.subTest(case=case.name):
+                # may be replace func name
+                self.assertEqual(s.$!velocityTool.smallCamelCaseName(${question.titleSlug})(**case.args.__dict__), case.want)
 
 ```
