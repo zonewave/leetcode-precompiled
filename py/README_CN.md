@@ -6,11 +6,11 @@
 
 ## pycharm 本地调试步骤
 
-### 安装[leetcode-editor](https://github.com/shuzijun/leetcode-editor)
+### 1. 安装[leetcode-editor](https://github.com/shuzijun/leetcode-editor)
 
-### [安装工具库](#安装工具库方式)
+### 2. [安装工具库](#安装工具库方式)
 
-### 配置模板
+### 3. 配置模板
 
 ![settingimag](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/templatesetting.jpg)
 
@@ -20,21 +20,21 @@
 [模板二，推荐](https://github.com/zonewave/leetcode-precompiled/blob/master/py/jetbrain_editor_template2.md)
 与模板一不同，这个主要简化了import，可以直接全量导入库，第一个是为了某些时候按需导入其他库，新手默认推荐这个。
 
-### 点击题目
+### 4.点击题目
 
 ![init](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/init.jpg)
 
-### 配置参数和用例，并进行调试
+### 5. 配置参数和用例，并进行调试
 
 ![debug](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/debug.jpg)
 
 ## vscode 本地调试步骤
 
-### 安装官方扩展并配置 Leetcode
+### 1. 安装官方扩展并配置 Leetcode
 
 参考官方的说明，配置好账号密码，这里就不说明
 
-### 代码路径的配置
+### 2. 代码路径的配置
 
 settings里搜索leetcode,打开setting.json,用下面的配置，添加或者替换Python3的文件路径声明
 
@@ -49,23 +49,25 @@ settings里搜索leetcode,打开setting.json,用下面的配置，添加或者�
 }
 ```
 
-### [安装工具库](#安装工具库方式)
+### 3. [安装工具库](#安装工具库方式)
 
-### 配置用户代码片段 snippet
+### 4. 配置用户代码片段 snippet
 
 在窗口左下角设置里 snippets，选择python， 生成代码片段文件。
 
 然后把[这里的](https://github.com/zonewave/leetcode-precompiled/blob/master/py/python-snippets.json) 内容，复制过去
 
-### 生成代码片段
+### 5. 生成代码片段
 
 点击lc界面里任一题目生成文件后，在空白处，敲击lctest，然后使用tab自动补全，接着像pycharm 那样填参数即可
 
-### 配置unittest测试并断点调试
+### 6. 配置unittest测试并断点调试
 
 本模板用的是uniittest框架。
 vscode的测试配置，参考微软的[文档](https://vscode.github.net.cn/docs/python/testing#_configure-tests)
 写好答案后，点击test界面，运行即可
+
+![运行](./img/vscode_run.gif)
 
 ## 安装工具库方式
 precompiled
