@@ -36,7 +36,7 @@
 
 ### 2. 代码路径的配置
 
-settings里搜索leetcode,打开setting.json,用下面的配置，添加或者替换Python3的文件路径声明
+settings里搜索leetcode,在filepath 那块 打开setting.json,用下面的配置，添加或者替换Python3的文件路径声明
 
 ```json
 {

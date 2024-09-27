@@ -77,7 +77,7 @@ class ListNode(object):
     @staticmethod
     def list_node_to_array(node: 'ListNode') -> List[int]:
         """
-        将数组转换为链表节点。
-        Converts an array to a linked list node.
+        将链表转化为数组
+        Converts a linked list node  to an array .
         """
         return [cur.val for cur in ListNode.iter_list(node)]
