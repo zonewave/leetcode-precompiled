@@ -31,31 +31,36 @@ class TestSolution(TestCase):
                 # may be replace func name
                 self.assertEqual(s.$6(**case.args.__dict__), case.want)
 """
-
-cpp = """
-struct Args {
-    mutable ? ;
-    mutable ? ;
-};
-
-struct LTestCase {
-    string name;
-    Args args;
-    ? want;
-};
-
-TEST_CASE("test cases") {
-    Solution s;
-
-    vector<LTestCase> cases = {
-        // todo
-        {"1", {}, },
-    };
-
-    for (const auto& case_ : cases) {
-        SUBCASE(case_.name.c_str()) {
-            vector<int> result = s.?(case_.args.arg1, case_.args.arg2);
-            CHECK(result == case_.want); 
+cppHead = """
+#include "common.h"
+namespace L?{
+"""
+cppBody = """
+    TEST_CASE("test cases"){
+        vector<LTestCase<
+            ?,//want
+            ? //args
+            >>
+            cases ={
+            {
+                "case 1",
+               ?, //want
+               ?, //args
+            },
+            // add cases
+        };
+        for (const auto& case_ : cases)
+        {
+            SUBCASE(case_.name.c_str())
+            {
+                Solution s;
+                auto arg1 = case_.args.get<0>();
+                auto arg2 = case_.args.get<1>();
+                // replace args 
+                vector<int> result = s.?(arg1, arg2);
+                // note: use ListNode::eq when compare ListNode
+                CHECK(result == case_.want);
+            }
         }
     }
 }
@@ -70,4 +75,4 @@ def print_json(tmpl):
 
 if __name__ == '__main__':
     # print(py)
-    print_json(cpp)
+    print_json(cppBody)
