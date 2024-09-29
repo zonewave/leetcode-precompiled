@@ -4,9 +4,7 @@
 #ifndef LISTNODE_H
 #define LISTNODE_H
 
-#include <iostream>
 #include <vector>
-#include <tuple>
 #include <functional>
 #include <optional>
 
@@ -25,6 +23,9 @@ struct ListNode{
   static ListNode* arrayToListNode(const std::vector<int> &arr);
   static std::vector<ListNode *> arraysToLinkedList(const std::vector<std::vector<int>> &arrList);
   static std::vector<int> listNodeToArray(ListNode *node);
+  ~ListNode() {
+    delete next; //
+  }
 };
 
 #endif // LISTNODE_H
