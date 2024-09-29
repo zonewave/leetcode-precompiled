@@ -15,4 +15,5 @@ max-line-length = 127
 statistics = True
 
 per-file-ignores =
-    ./src/precompiled/all.py:F401,F403
+    ./src/precompiled/all.py: F401,F403
+    ./src/precompiled/tools/print_vscode_snippets.py: W291
