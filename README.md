@@ -1,41 +1,28 @@
-# LeetCode Local Debugging Environment Configuration (JetBrains)
+# LeetCode 配置本地调试环境所需要的库
 
-[中文文档](https://github.com/zonewave/leetcode-precompiled/blob/master/README_CN.md)
-## Introduction
+## 简介
+本项目提供本地调试leetcode环境的所需的工具库
 
-This project is based on leetcode-editor and provides problem solution templates to facilitate local debugging of LeetCode environments.
+如何配置可参考[模板项目](https://github.com/zonewave/leetcode-local-debug-tmpl)
 
-## Motivation
-Solving problems on the web can be quite painful, especially when encountering complex test cases that fail to pass. It often takes a long time to pinpoint the issues. Therefore, I wanted to use a local IDE for step-by-step debugging of LeetCode problems, as it's generally more convenient and allows for quicker issue identification. I later installed leetcode-editor in PyCharm. However, the default templates were too simplistic, making it cumbersome to write test cases, and I couldn't find good templates online. This led to the creation of this project. With my template, you only need to configure the parameter types, and then you can simply copy the test cases from the problem description to run them. Currently, it only supports Python, but there will be support for other languages in the future.
 
-### [Python](https://github.com/zonewave/leetcode-precompiled/blob/master/py/README.md)
-![debug](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/debug.jpg)
+## 特性
+- 支持多种编程语言的工具包,包含官方声明的所有数据结构，如 `ListNode`、`NestedInteger`、`TreeNode` 等
+- 提供部分工具函数，比如数组转链表，数组转树，数组转图的，可以更好地本地测试
 
-## Features
 
-- Supports multiple programming languages with toolkits, including all officially declared data structures such as `ListNode`, `NestedInteger`, `TreeNode`, etc.
-- Provides some utility functions for better local testing.
-- Based on leetcode-editor, offers template content for various programming languages.
-- Easy to use, suitable for quickly configuring a local debugging environment for LeetCode problems.
+## 支持的编程语言
+- [Python](https://github.com/zonewave/leetcode-precompiled/blob/master/py/README_CN.md)
+- [Cpp](https://github.com/zonewave/leetcode-local-debug-tmpl)
 
-## Supported Programming Languages
-
-- [x] [Python](./py/README.md)
-- [ ] Go
-- [ ] Java
-- [ ] CSharp
-- [ ] C++
-- [ ] C
-- [ ] Rust
-
-## Contributions
-
-Contributions of any kind are welcome! If you have new data structures or suggestions for improvements, please submit a pull request or raise an issue.
-
-## License
-
-This project is licensed under the MIT License. For more details, please see the [LICENSE](https://github.com/zonewave/leetcode-precompiled/blob/master/LICENSE) file.
-
-## Contact Information
-
-If you have any questions, please contact the project maintainer.
+## 贡献  
+  
+欢迎任何形式的贡献！如果您有新的数据结构或改进建议，请提交拉取请求或提出问题。  
+  
+## 许可证  
+  
+本项目采用 MIT 许可证，详细信息请查看 [LICENSE](https://github.com/zonewave/leetcode-precompiled/blob/master/LICENSE) 文件。  
+  
+## 联系信息  
+  
+如有疑问，请联系项目维护者。

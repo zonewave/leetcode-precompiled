@@ -1,66 +1,47 @@
-# LeetCode Python  Debug  in pycharm
+# LeetCode Python 预编译库
+
+欢迎使用 LeetCode Python 工具库！
 
 [github](https://github.com/zonewave/leetcode-precompiled)
 
-[中文文档](https://github.com/zonewave/leetcode-precompiled/blob/master/py/README_CN.md)
+本库包含
+1. leetcode 官方声明的所有数据结构
+2. 本地测试所需的各种工具函数 [api说明](#常用数据结构和方法)
+## 安装
 
-## How to debug leetcode problem
 
-### install [leetcode-editor](https://github.com/shuzijun/leetcode-editor)
+目前稳定版本为0.1.8。
+可以通过以下命令安装该库：
+### bash
+``` sh
+pip install precompiled  
+```  
+### pdm
 
-###      
-
-![settingimag](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/templatesetting.jpg)
-
-[template content](https://github.com/zonewave/leetcode-precompiled/blob/master/py/jetbrain_editor_template.md)
-
-### click problem and init python file
-
-![init](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/init.jpg)
-
-### replace arg and add test case
-
-![debug](https://github.com/zonewave/leetcode-precompiled/blob/master/py/img/debug.jpg)
-
-## Install tool package
-
-You can install the library using the following commands:
-
-### Using pip
-
-```sh
-pip install precompiled
-```
-
-### Using pdm
-
-```sh
+```sh  
 pdm add precompiled
-```
+```  
 
-## Usage
+## 使用说明
 
-Once installed, you can use the following import statements in your Python code to access all data
-structures from LeetCode:
+安装完成后，您可以在 Python 代码中使用以下导入语句来访问leetcode所有数据结构：
 
 python
 
-```python
+复制
+
+```python  
 from precompiled.listnode import ListNode
 from precompiled.nestedinteger import NestedInteger
 from precompiled.treenode import TreeNode
+```  
 
-`
-```
+### 常用数据结构和方法
 
-### Common Data Structures and Methods
-
-- **ListNode**: Linked list node
-    - Default implementation of the`eq`method
-    - `array_to_list_node`: Converts an array into a linked list, returning the head node
-    - `arrays_to_list_node`: Converts multiple arrays into multiple linked lists, returning a tuple
-      of linked lists
-    - `index`: get Returns the idx node of the linked list,
-- **NestedInteger**: Nested integer
-- **TreeNode**: Tree node
-
+- **ListNode**：链表节点
+    - 默认实现eq方法
+    - array_to_list_node 将数组转换成链表，返回头结点
+    - arrays_to_list_node 将多个数组转成多个链表，返回以链表为元素的元组
+    - index: 返回链表第 idx 个节点， 下标从 0 开始。
+- **NestedInteger**：嵌套整数
+- **TreeNode**：树节点  
