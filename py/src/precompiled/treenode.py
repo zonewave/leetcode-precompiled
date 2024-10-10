@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional, List
 
-from .common import array_to_tree
+from .treenode_base import array_to_tree
 
 
 @dataclass

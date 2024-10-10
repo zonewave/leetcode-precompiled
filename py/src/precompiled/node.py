@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import Optional, List, Dict
 from functools import reduce
 
-from .common import array_to_tree
+from .treenode_base import array_to_tree
 
 
 @dataclass
