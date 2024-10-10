@@ -1,6 +1,7 @@
-from collections import deque
 from dataclasses import dataclass
 from typing import Optional, List
+
+from .common import array_to_tree
 
 
 @dataclass
@@ -19,27 +20,5 @@ class TreeNode(object):
         self.right = n
 
     @staticmethod
-    def array_to_tree(vals: List[Optional[int]]) -> Optional['TreeNode']:
-        if not vals:
-            return None
-
-        root = TreeNode(vals[0])
-        queue = deque([root])
-        i = 1
-        length = len(vals)
-
-        while queue:
-            node = queue.popleft()
-            if i < length and vals[i] is not None:
-                left = TreeNode(vals[i])
-                node.set_left(left)
-                queue.append(left)
-            i += 1
-
-            if i < length and vals[i] is not None:
-                right = TreeNode(vals[i])
-                node.set_right(right)
-                queue.append(right)
-            i += 1
-
-        return root
+    def array_to_tree(arr: List[Optional[int]]) -> Optional['TreeNode']:
+        return array_to_tree(TreeNode, arr)

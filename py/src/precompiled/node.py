@@ -1,26 +1,42 @@
 from dataclasses import dataclass
 from typing import Optional, List, Dict
+from functools import reduce
 
-from .listnode import ListNode
-from .treenode import TreeNode
+from .common import array_to_tree
 
 
 @dataclass
-class Node(TreeNode, ListNode):
+class Node(object):
+    val: int
+    next: Optional['Node']
     random: Optional['Node']
+    left: Optional['Node']
+    right: Optional['Node']
 
-    def __init__(self, val):
-        TreeNode.__init__(self, val)
-        ListNode.__init__(self, val, None)
+    def __init__(self, val_: int):
+        self.val = val_
+        self.next = None
         self.random = None
+        self.left = None
+        self.right = None
+
+    def set_next(self, next_: Optional['Node']) -> 'Node':
+        self.next = next_
+        return self
+
+    def set_left(self, n: 'Node'):
+        self.left = n
+
+    def set_right(self, n: 'Node'):
+        self.right = n
 
     @staticmethod
     def array_to_list_node(arr: List[int]) -> Optional['Node']:
-        return ListNode.array_to_list_node(arr)
+        return reduce(lambda acc, val: Node(val).set_next(acc), reversed(arr), None)
 
     @staticmethod
-    def array_to_tree(vals: List[int]) -> Optional['Node']:
-        return TreeNode.array_to_tree(vals)
+    def array_to_tree(arr: List[int]) -> Optional['Node']:
+        return array_to_tree(Node, arr)
 
     @staticmethod
     def arr_to_random_list(arr: List[List[int]]) -> Optional['Node']:
