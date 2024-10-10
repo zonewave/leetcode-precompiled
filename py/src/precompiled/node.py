@@ -13,12 +13,12 @@ class Node(object):
     left: Optional['Node']
     right: Optional['Node']
 
-    def __init__(self, val_: int):
+    def __init__(self, val_: int = 0, next_=None, random_=None, left=None, right=None):
         self.val = val_
-        self.next = None
-        self.random = None
-        self.left = None
-        self.right = None
+        self.next = next_
+        self.random = random_
+        self.left = left
+        self.right = right
 
     def set_next(self, next_: Optional['Node']) -> 'Node':
         self.next = next_
@@ -32,7 +32,7 @@ class Node(object):
 
     @staticmethod
     def array_to_list_node(arr: List[int]) -> Optional['Node']:
-        return reduce(lambda acc, val: Node(val).set_next(acc), reversed(arr), None)
+        return reduce(lambda acc, val: Node(val, acc), reversed(arr), None)
 
     @staticmethod
     def array_to_tree(arr: List[int]) -> Optional['Node']:

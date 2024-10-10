@@ -10,8 +10,10 @@ class TreeNode(object):
     left: Optional['TreeNode']
     right: Optional['TreeNode']
 
-    def __init__(self, val):
+    def __init__(self, val, left: Optional['TreeNode'] = None, right: Optional['TreeNode'] = None):
         self.val = val
+        self.left = left
+        self.right = right
 
     def set_left(self, n: 'TreeNode'):
         self.left = n
