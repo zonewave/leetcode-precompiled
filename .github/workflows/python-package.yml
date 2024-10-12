@@ -32,7 +32,7 @@ jobs:
     - name: Install dependencies
       run: |
         cd py
-        pdm install
+        pdm sync -d -G "lint,test"
     - name: Lint with flake8
       run: |
         cd py
