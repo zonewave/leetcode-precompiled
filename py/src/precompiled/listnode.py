@@ -8,9 +8,9 @@ class ListNode(object):
     val: int
     next: Optional['ListNode']
 
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, next_=None):
         self.val = val
-        self.next = next
+        self.next = next_
 
     def __eq__(self, other: 'ListNode') -> bool:
         if not isinstance(other, ListNode):
@@ -61,7 +61,9 @@ class ListNode(object):
         将数组转换为链表节点。
         Converts an array to a linked list node.
         """
-        return reduce(lambda acc, val: ListNode(val, acc), reversed(arr), None)
+        fn: Callable[[Optional['ListNode'], int], ListNode] \
+            = lambda acc, val: ListNode(val, acc)
+        return reduce(fn, reversed(arr), None)
 
     @staticmethod
     def arrays_to_linked_list(*arr_list: List[int]) -> Tuple[Optional['ListNode'], ...]:

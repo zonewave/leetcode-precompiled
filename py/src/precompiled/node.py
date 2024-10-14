@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, Callable
 from functools import reduce
 
 from .treenode_base import array_to_tree
@@ -32,7 +32,9 @@ class Node(object):
 
     @staticmethod
     def array_to_list_node(arr: List[int]) -> Optional['Node']:
-        return reduce(lambda acc, val: Node(val, acc), reversed(arr), None)
+        fn: Callable[[Optional['Node'], int], Node] \
+            = lambda acc, val: Node(val, acc)
+        return reduce(fn, reversed(arr), None)
 
     @staticmethod
     def array_to_tree(arr: List[int]) -> Optional['Node']:

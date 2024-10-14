@@ -5,7 +5,7 @@
 [github](https://github.com/zonewave/leetcode-precompiled)
 
 本库包含
-1. leetcode 官方声明的所有数据结构
+1. LeetCode 官方声明的所有数据结构
 2. 本地测试所需的各种工具函数 [api说明](#常用数据结构和方法)
 ## 安装
 
@@ -24,7 +24,7 @@ pdm add precompiled
 
 ## 使用说明
 
-安装完成后，您可以在 Python 代码中使用以下导入语句来访问leetcode所有数据结构：
+安装完成后，您可以在 Python 代码中使用以下导入语句来访问LeetCode所有数据结构：
 
 python
 
